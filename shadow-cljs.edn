@@ -2,4 +2,5 @@
  :builds {:app {:target :browser
                 :output-dir "public/js"
                 :asset-path "/js"
+                :compiler-options {:optimizations :advanced}
                 :modules {:main {:init-fn pong-game.core/init}}}}}
